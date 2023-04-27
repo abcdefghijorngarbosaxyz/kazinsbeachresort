@@ -94,7 +94,7 @@ function RoomsAndCottages() {
                   <div className="ml-8 flex h-fit w-3/4 flex-col">
                     {merged.length > 0 &&
                       merged.map((item, index) => (
-                        <Link href={`#${item.name}`}>
+                        <Link key={index} href={`#${item.name}`}>
                           <a
                             className={`${
                               currentElementIndexInViewport == index &&

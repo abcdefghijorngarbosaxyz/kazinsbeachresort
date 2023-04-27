@@ -132,7 +132,7 @@ const Booking = () => {
               <div className="h-fit w-full space-y-4">
                 {merged.length > 0 &&
                   merged.map((item, index) => (
-                    <div className="flex h-fit w-full pt-16">
+                    <div key={index} className="flex h-fit w-full pt-16">
                       <div className="h-fit w-1/3">
                         <div className="relative aspect-video h-full w-full">
                           <Image
