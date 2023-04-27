@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../public/assets/fonts/Raleway-var.ttf");
+}
+
+@font-face {
+  font-family: "Italiana";
+  src: url("../public/assets/fonts/Italiana.ttf");
+}
+
+#scrolltostart span::before {
+  -webkit-animation: bounce-fade 1.5s infinite;
+  animation: bounce-fade 1.5s infinite;
+}
+
+@-webkit-keyframes bounce-fade {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 6px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bounce-fade {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 6px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
