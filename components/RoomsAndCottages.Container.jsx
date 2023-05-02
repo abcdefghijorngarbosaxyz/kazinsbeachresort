@@ -105,7 +105,16 @@ function RACContainer({ RoomCottage }) {
         </div>
       </div>
       <div className="h-fit w-full">
-        {RoomCottage.isAvailable ? (
+        {!RoomCottage.isAvailable &&
+        now.isBetween(
+          moment(RoomCottage.reservationDate.fromDate),
+          moment(RoomCottage.reservationDate.toDate)
+        ) ? (
+          <div className="group flex w-fit cursor-pointer items-center text-sm font-medium text-gray-400 hover:underline">
+            <span className="mr-2 block h-[1px] w-3 bg-gray-400 transition-all duration-300 group-hover:mr-0 group-hover:w-0"></span>
+            Unavailable
+          </div>
+        ) : (
           <Link
             href={`/booking/step-two?racId=${RoomCottage._id}&type=${RoomCottage.type}`}
           >
@@ -114,11 +123,6 @@ function RACContainer({ RoomCottage }) {
               Book this {RoomCottage.type}
             </a>
           </Link>
-        ) : (
-          <div className="group flex w-fit cursor-pointer items-center text-sm font-medium text-gray-400 hover:underline">
-            <span className="mr-2 block h-[1px] w-3 bg-gray-400 transition-all duration-300 group-hover:mr-0 group-hover:w-0"></span>
-            Unavailable
-          </div>
         )}
       </div>
     </div>
