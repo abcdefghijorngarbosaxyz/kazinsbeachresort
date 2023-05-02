@@ -157,7 +157,7 @@ export default function Frame({
           <div className="fixed top-0 left-0 -z-50 h-screen w-full">
             <Image src={featureImage} layout="fill" objectFit="cover" />
           </div>
-          <div className="h-screen w-full bg-black/25 px-10">
+          <div className="h-screen w-full bg-black/50 px-10">
             {/* <div className="flex h-32 w-full items-center justify-between">
               <div className="h-fit w-56"></div>
               <Link href="/">
@@ -239,11 +239,19 @@ export default function Frame({
               </Link>
             </div> */}
             <div className="flex h-full w-full flex-col items-center justify-between">
-              <h3 className="mt-48 text-sm tracking-[.2em] text-white">
+              {/* <h3 className="mt-48 text-sm tracking-[.2em] text-white">
                 {pageTitle}
               </h3>
               <div className="h-fit w-full px-16 text-center font-italiana text-3xl font-light tracking-[.2em] text-white lg:px-40 lg:text-5xl lg:font-bold">
                 <p className="leading-loose">{heroTitle}</p>
+              </div> */}
+
+              <div className="mt-72 flex h-32 w-fit flex-col items-center justify-center font-italiana text-white">
+                <span className="text-4xl tracking-widest">GUGMA BEACH</span>
+                <span className="text-9xl font-bold tracking-[0.5em]">
+                  KAZIN&apos;S
+                </span>
+                <span className="text-4xl tracking-widest">BEACH RESORT</span>
               </div>
               <Link href="#startsection">
                 <a
