@@ -112,7 +112,7 @@ function RACContainer({ RoomCottage }) {
         ) ? (
           <div className="group flex w-fit cursor-pointer items-center text-sm font-medium text-gray-400 hover:underline">
             <span className="mr-2 block h-[1px] w-3 bg-gray-400 transition-all duration-300 group-hover:mr-0 group-hover:w-0"></span>
-            Unavailable
+            Unavailable now
           </div>
         ) : (
           <Link
