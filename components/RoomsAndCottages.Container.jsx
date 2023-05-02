@@ -62,7 +62,7 @@ function RACContainer({ RoomCottage }) {
                     <div
                       className={`group absolute top-0 left-0 flex h-128 w-full items-center justify-center`}
                     >
-                      <div className="flex h-full w-full flex-col items-center justify-center bg-black/50 text-lg text-white opacity-0 group-hover:opacity-100">
+                      <div className="flex h-full w-full flex-col items-center justify-center bg-black/50 text-lg text-white">
                         UNAVAILABLE RIGHT NOW
                         <DateRange
                           onChange={() => null}
